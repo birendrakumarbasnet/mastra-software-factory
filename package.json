@@ -1,0 +1,13 @@
+{
+  "name": "mastra-software-factory",
+  "version": "1.0.0",
+  "description": "Full-stack application with NestJS, Next.js, and MongoDB",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
